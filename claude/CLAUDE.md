@@ -21,3 +21,7 @@ When merging PRs:
 ## Infrastructure
 
 - When running infrastructure locally, prefer Docker containers where possible
+
+## QA
+
+- Use the agent-browser skill and CLI whenever you need to QA a website or webapp we're working on
