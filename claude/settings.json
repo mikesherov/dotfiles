@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Bash(brew:*)",
+      "Bash(ls:*)",
+      "Bash(npm run:*)",
+      "Bash(uv run:*)",
+      "WebSearch",
+      "WebFetch"
+    ]
+  }
+}
