@@ -17,3 +17,7 @@ When merging PRs:
 
 - Always write tests for implementation changes
 - If code coverage reporting is available, strive for reasonable coverage but don't obsess over hitting 100%
+
+## Infrastructure
+
+- When running infrastructure locally, prefer Docker containers where possible
