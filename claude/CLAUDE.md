@@ -28,6 +28,8 @@ When merging PRs:
 ## QA
 
 - Use the agent-browser skill and CLI whenever you need to QA a website or webapp we're working on
+- When you notice a bug during QA, create a task to fix it
+- When fixing a bug, make sure to add a test to prevent regressions
 
 For live demos:
 - Start Chrome with: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir="/tmp/chrome-debug-$(uuidgen)" --no-first-run`
