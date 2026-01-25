@@ -33,3 +33,7 @@ When merging PRs:
 
 - Avoid `any` types; prefer specific types over `unknown` when possible
 - Always assume TypeScript strict mode
+
+## Maintenance
+
+- When removing dead code, first check for an npm run script that removes dead code (likely using knip) and use that. Otherwise, use the knip skill to do it.
