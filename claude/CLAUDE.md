@@ -2,6 +2,8 @@
 
 ## Git Workflow
 
+**IMPORTANT: Never automatically open PRs and merge. Always wait for explicit user request.**
+
 Use trunk-based development with shallow feature branches. When asked to commit:
 1. Stash any uncommitted changes
 2. Checkout main and pull latest
@@ -12,7 +14,6 @@ Use trunk-based development with shallow feature branches. When asked to commit:
 When merging PRs:
 - Never use `--admin` flag to bypass branch protection
 - If a PR isn't mergeable due to checks, wait a few minutes and retry
-- Never automatically open PRs and merge
 
 ## Testing
 
