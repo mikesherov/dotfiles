@@ -31,3 +31,4 @@ When merging PRs:
 ## TypeScript
 
 - Avoid `any` and `unknown` types
+- Always assume TypeScript strict mode
