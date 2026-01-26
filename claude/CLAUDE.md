@@ -28,10 +28,13 @@ When merging PRs:
 ## QA
 
 - Use the agent-browser skill and CLI whenever you need to QA a website or webapp we're working on
-- For live demos using local Chrome:
-  1. Start Chrome with: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222`
-  2. Connect agent-browser: `agent-browser connect 9222`
-  3. Use agent-browser commands as normal (they will control the visible Chrome window)
+
+For live demos:
+- Start Chrome with: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir="/tmp/chrome-debug-$(uuidgen)" --no-first-run`
+- Connect agent-browser: `agent-browser connect 9222`
+- Use agent-browser commands as normal (they will control the visible Chrome window)
+- Use the `say` bash command to explain what the site/feature is to the audience, not for internal thoughts or navigation (e.g., `say "This is the dashboard where users can view their analytics"`)
+- Never use `agent-browser screenshot` during live demos (too slow)
 
 ## TypeScript
 
