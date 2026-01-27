@@ -38,6 +38,12 @@ For live demos:
 - Use the `say` bash command to explain what the site/feature is to the audience, not for internal thoughts or navigation (e.g., `say "This is the dashboard where users can view their analytics"`)
 - Never use `agent-browser screenshot` during live demos (too slow)
 
+## Coding
+
+- Try to consolidate implementation. A bit of duplication is ok, but don't be messy.
+- When working with APIs and data models, make sure you have a complete understanding of the APIs and how they work before starting.
+- Keep things simple. The simplest thing that will work is always a good starting point.
+
 ## TypeScript
 
 - Avoid `any` types; prefer specific types over `unknown` when possible
