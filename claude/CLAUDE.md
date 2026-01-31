@@ -2,7 +2,7 @@
 
 ## Git Workflow
 
-**IMPORTANT: Never automatically open PRs and merge. Always wait for explicit user request.**
+**IMPORTANT: Always wait for explicit requests to open pull requests, never open them on your own.**
 
 Use trunk-based development with shallow feature branches. When asked to commit:
 1. Stash any uncommitted changes
