@@ -6,4 +6,4 @@ description: React conventions for editing JSX and TSX files, including Testing 
 # React
 
 - When writing tests with React Testing Library, prefer `data-testid` selectors over brittle selectors like tag names, class names, or DOM structure.
-- Load the **accessibility** skill when writing JSX to ensure a11y best practices are followed.
+- Load the **accessibility** skill to ensure a11y best practices are followed.
