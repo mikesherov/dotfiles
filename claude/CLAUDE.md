@@ -4,16 +4,11 @@
 
 **IMPORTANT: Always wait for explicit requests to open pull requests, never open them on your own.**
 
-Use trunk-based development with shallow feature branches. When asked to commit:
-1. Stash any uncommitted changes
-2. Checkout main and pull latest
-3. Create a new feature branch
-4. Apply stashed changes
-5. Commit
+Changes must be branched off of latest main.
 
 When merging PRs:
 - Never use `--admin` flag to bypass branch protection
-- If a PR isn't mergeable due to checks, wait a few minutes and retry
+- Use the `--auto` flag of `gh pr merge` to merge PRs
 
 ## Testing
 
