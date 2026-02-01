@@ -29,14 +29,12 @@ Load these skills before starting the review:
 
 ## Output Format
 
+One line per issue, grouped by file. Omit files with no issues.
+
 ```
-## <file path>
-
-### Accessibility
-- **[WCAG X.X.X]** <issue> (line N) — <suggested fix>
-
-### Performance
-- **[rule-name]** <issue> (line N) — <suggested fix>
+**<file path>**
+- [WCAG X.X.X] <issue> (line N)
+- [rule-name] <issue> (line N)
 ```
 
-If a file has no issues, omit it from the report.
+After outputting all results, ask the user if they'd like to fix the issues.
