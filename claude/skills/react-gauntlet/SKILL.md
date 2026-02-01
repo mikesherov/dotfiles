@@ -1,7 +1,7 @@
 ---
 name: react-gauntlet
-description: DO NOT auto-load this skill. Only invoke when the user explicitly requests /react-gauntlet.
-user_invokable: true
+description: Review React code for WCAG 2.1 AA accessibility compliance and Vercel performance best practices.
+disable-model-invocation: true
 ---
 
 # React Gauntlet
