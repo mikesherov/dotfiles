@@ -49,6 +49,10 @@ For live demos:
 - Avoid `any` types; prefer specific types over `unknown` when possible
 - Always assume TypeScript strict mode
 
+## React
+
+- When writing tests with React Testing Library, prefer `data-testid` selectors over brittle selectors like tag names, class names, or DOM structure.
+
 ## Maintenance
 
 - When removing dead code, first check for an npm run script that removes dead code (likely using knip) and use that. Otherwise, use the knip skill to do it.
