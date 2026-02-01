@@ -30,13 +30,14 @@ When merging PRs:
 - Use the agent-browser skill and CLI whenever you need to QA a website or webapp we're working on
 - When you notice a bug during QA, create a task to fix it
 - When fixing a bug, make sure to add a test to prevent regressions
+- Avoid using `agent-browser screenshot` during QA (too slow). If `agent-browser snapshot` isn't accurate enough, it is likely an a11y bug, and you should create a task to fix it.
 
-For live demos:
+### Live Demos
+
 - Start Chrome with: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir="/tmp/chrome-debug-$(uuidgen)" --no-first-run`
 - Connect agent-browser: `agent-browser connect 9222`
 - Use agent-browser commands as normal (they will control the visible Chrome window)
 - Use the `say` bash command to explain what the site/feature is to the audience, not for internal thoughts or navigation (e.g., `say "This is the dashboard where users can view their analytics"`)
-- Never use `agent-browser screenshot` during live demos (too slow)
 
 ## Coding
 
