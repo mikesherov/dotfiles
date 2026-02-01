@@ -4,16 +4,11 @@
 
 **IMPORTANT: Always wait for explicit requests to open pull requests, never open them on your own.**
 
-Use trunk-based development with shallow feature branches. When asked to commit:
-1. Stash any uncommitted changes
-2. Checkout main and pull latest
-3. Create a new feature branch
-4. Apply stashed changes
-5. Commit
+Changes must be branched off of latest main.
 
 When merging PRs:
 - Never use `--admin` flag to bypass branch protection
-- If a PR isn't mergeable due to checks, wait a few minutes and retry
+- Use the `--auto` flag of `gh pr merge` to merge PRs
 
 ## Testing
 
@@ -27,17 +22,11 @@ When merging PRs:
 
 ## QA
 
-- Use the agent-browser skill and CLI whenever you need to QA a website or webapp we're working on
-- When you notice a bug during QA, create a task to fix it
-- When fixing a bug, make sure to add a test to prevent regressions
-- Avoid using `agent-browser screenshot` during QA (too slow). If `agent-browser snapshot` isn't accurate enough, it is likely an a11y bug, and you should create a task to fix it.
+Load the **qa** skill when QA'ing websites.
 
-### Live Demos
+## Live Demos
 
-- Start Chrome with: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222 --user-data-dir="/tmp/chrome-debug-$(uuidgen)" --no-first-run`
-- Connect agent-browser: `agent-browser connect 9222`
-- Use agent-browser commands as normal (they will control the visible Chrome window)
-- Use the `say` bash command to explain what the site/feature is to the audience, not for internal thoughts or navigation (e.g., `say "This is the dashboard where users can view their analytics"`)
+Load the **live-demos** skill when giving live demos.
 
 ## Coding
 
