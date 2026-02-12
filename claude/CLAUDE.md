@@ -15,6 +15,9 @@ When merging PRs:
 - Always write tests for implementation changes
 - If code coverage reporting is available, strive for reasonable coverage but don't obsess over hitting 100%
 - When writing tests, only mock minimally. For example, you can mock out a database connection, or an external API, or the current time, or randomness. Do not mock implementation.
+- After fixing production code, always check that test mocks still match the new call signatures/order
+- When tests use mock expectations based on call order, update them when refactoring the underlying code
+- Prefer data-testid selectors over text matching to avoid brittle tests
 
 ## Infrastructure
 
@@ -42,6 +45,13 @@ Load the **live-demos** skill when giving live demos.
 ## React
 
 - When writing tests with React Testing Library, prefer `data-testid` selectors over brittle selectors like tag names, class names, or DOM structure.
+
+## Database
+
+### Query Optimization
+- When optimizing database queries, benchmark before and after — initial attempts may make performance worse (e.g., O(N²) data duplication)
+- Prefer adding indexes and restructuring queries over consolidating multiple queries into one complex query
+- Target: no queries over 1000ms
 
 ## Maintenance
 
